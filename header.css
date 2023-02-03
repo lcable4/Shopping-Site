@@ -1,0 +1,88 @@
+.main-nav, .sub-nav {
+    font-family:"Open Sans";
+    font-weight: 200;
+    display: flex;
+}
+.main-nav {
+    display: flex;
+    background-color: darkmagenta;
+    justify-content:space-between;
+    
+}
+.nav-list {
+    list-style: none;
+}
+.horizontal.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+.horizontal.nav-list li:last-of-type a {
+    border-right: none;
+}
+.horizontal.nav-list a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Dosis";
+    display: block;
+    
+}
+@media (min-width: 768px) {
+    .horizontal.nav-list.full-width {
+        display: flex;
+    }
+    .horizontal.nav-list.short-width {
+        display: none;
+    }
+}
+
+.sub-nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+.search-form {
+    display: flex;
+    flex: 1;
+}
+.search-form input {
+    padding: 5px;
+    border: 0;
+    outline: none;
+    flex: 1;
+    border-bottom: 3px solid darkmagenta;
+    flex-grow: 1;
+    margin-top: 2%;
+    font-family: "Dosis";
+}
+button {
+    padding: 5px;
+    border: 0;
+    background-color: darkmagenta;
+    height: 30px;
+    margin-right: 3%;
+    margin-top: 2%;
+    color: white;
+    
+}
+.company-name {
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 5px;
+    font-family: "Dosis";
+    width: 30%;
+    text-align: center; 
+    color: darkmagenta   
+}
+.credit-offer {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-family: "Dosis";
+    height: 30px;
+    font-size: 13px;
+    text-align: center;
+}
